@@ -11,19 +11,28 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
   geometry_msgs
+  sensor_msgs
+  manipulation_msgs
+  moveit_msgs
+  trajectory_planning_msg
   message_generation
 )
 add_service_files(
     FILES
+    AddPose.srv
     AddTrajectory.srv
+    GetPose.srv
     GetTrajectory.srv
+    RemovePose.srv
     RemoveTrajectory.srv
 )
-
 
 generate_messages(
     DEPENDENCIES
     std_msgs
+    geometry_msgs
+    sensor_msgs
+    manipulation_msgs
 )
 catkin_package(
 #  INCLUDE_DIRS include

@@ -1,0 +1,7 @@
+string name
+geometry_msgs/Transform tf_pose
+manipulation_msgs/RpyPose rpy_pose
+sensor_msgs/JointState joint_pose
+---
+bool success
+string message
