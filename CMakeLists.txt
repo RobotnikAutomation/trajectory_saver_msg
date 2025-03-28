@@ -21,6 +21,7 @@ add_service_files(
     FILES
     AddPose.srv
     AddTrajectory.srv
+    GetListOfPoses.srv
     GetPose.srv
     GetTrajectory.srv
     RemovePose.srv
