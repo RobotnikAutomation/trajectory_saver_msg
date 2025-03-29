@@ -10,6 +10,7 @@ project(trajectory_saver_msg)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
+  manipulation_msgs
   geometry_msgs
   sensor_msgs
   manipulation_msgs
